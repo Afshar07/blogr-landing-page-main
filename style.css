@@ -1,0 +1,35 @@
+/* Default Frontendmentor Styles Start*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* Default Frontendmentor Styles End*/
+
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Section */
+.header {
+  width: 100%;
+  height: 25rem;
+  background-image: url(images/bg-pattern-intro.svg),
+    linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-size: auto;
+    background-position: 25% center;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 70px;
+}
+.header__logo{
+  margin: 2rem 1rem 0 8rem;
+}
