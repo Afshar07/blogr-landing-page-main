@@ -76,6 +76,7 @@ body {
   content: "\f106";
 }
 .sub-item {
+  margin-top: .7rem;
   list-style-type: none;
   position: absolute;
   color: #000000;
@@ -86,13 +87,20 @@ body {
   border-radius: 10px;
   padding: 1rem;
   right: auto;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+
 }
 .sub-item li {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 1rem;
+  font-weight: 300;
+  width: 6rem;
 }
 .sub-item li:last-child {
   margin-bottom: 0;
+}
+.sub-item li:hover{
+  font-weight: bold;
 }
 .navbar-item:hover .sub-item {
   display: block;
@@ -118,6 +126,11 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+.sign-up:hover{
+  background-color: rgba(255, 255, 255, 0.384);
+  color: #fff;
+  transition: all .2s;
 }
 .login{
   height: 2.5rem;
@@ -155,9 +168,16 @@ body {
   font-size: .9rem;
   font-weight: bold;
   color: #ff525d;
+  cursor: pointer;
 }
 .start-btn:focus{
   outline: none;
+}
+.start-btn:hover{
+  background-color: rgba(255, 255, 255, 0.384);
+  color: #fff;
+  transition: all .2s;
+  border: none;
 }
 .learn-btn{
   color: #fff;
@@ -170,4 +190,13 @@ body {
   font-family: inherit;
   font-size: .9rem;
   font-weight: bold;
+  cursor: pointer;
+}
+.learn-btn:focus{
+  outline: none;
+}
+.learn-btn:hover{
+  background-color: #fff;
+  color: #ff525d;
+  transition: all .2s;
 }
