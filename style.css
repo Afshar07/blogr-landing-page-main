@@ -100,7 +100,7 @@ body {
 .right {
   margin: 2rem 6rem 0 0rem;
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 .right-btn {
@@ -110,18 +110,20 @@ body {
 .sign-up {
   margin-left: 2rem;
   background-color: #fff;
-  color: hsl(356, 100%, 66%);
+  color: #ff525d;
   width: 7rem;
   height: 2.5rem;
   border-radius: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .login{
   height: 2.5rem;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .titles{
   margin-top: 2rem;
@@ -130,15 +132,42 @@ body {
   align-items: center;
   font-family: 'Overpass', sans-serif;
   color: #fff;
-  position: relative;
 }
 .first-title{
   font-size: 3rem;
   font-weight: 600;
   line-height: 0;
-  position: absolute;
+  margin-bottom: 1.5rem;
 }
-.sub-title{
-  position: absolute;
-  top: 5rem;
+.btns{
+  display: flex;
+  justify-content: center;
+  font-family: 'Ubunto', sans-serif;
+  margin-top: 2rem;
+}
+.start-btn{
+  width: 8rem;
+  height: 2.5rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 100px;
+  font-family: inherit;
+  font-size: .9rem;
+  font-weight: bold;
+  color: #ff525d;
+}
+.start-btn:focus{
+  outline: none;
+}
+.learn-btn{
+  color: #fff;
+  margin-left: 1rem;
+  background-color: transparent;
+  height: 2.5rem;
+  width: 8rem;
+  border: 2px solid white;
+  border-radius: 100px;
+  font-family: inherit;
+  font-size: .9rem;
+  font-weight: bold;
 }
