@@ -226,8 +226,21 @@ body {
   flex-direction: row; 
 }
 .flex-left{
-  width: 50%;
+  font-family: 'Overpass', sans-serif;
+  margin-left: 9rem;
+  margin-top: 4rem;
+  text-align: justify;
+  width: 60%;
 }
 .flex-right{
-  width: 50%;
+  width: 40%;
+}
+.detail-text{
+  width: 70%;
+  color: hsl(207, 13%, 34%);
+  /* font-size: .9rem; */
+}
+.heading{
+  color: #1f3f5b;
+  font-size: 1.8rem;
 }
