@@ -32,7 +32,7 @@ body {
   background-size: auto;
   background-position: 25% center;
   background-repeat: no-repeat;
-  border-bottom-left-radius: 70px;
+  border-bottom-left-radius: 150px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
 }
@@ -254,8 +254,8 @@ body {
   background-position: -68% 80%;
   height: 25rem;
   width: 100%;
-  border-top-right-radius: 100px;
-  border-bottom-left-radius: 100px;
+  border-top-right-radius: 150px;
+  border-bottom-left-radius: 150px;
   display: flex;
   flex-direction: row;
   color: #fff;
@@ -296,4 +296,9 @@ body {
 }
 .second-flex-left p {
   width: 83%;
+}
+.footer{
+  height: 20rem;
+  background-color: #25252d;
+  border-top-right-radius: 150px;
 }
