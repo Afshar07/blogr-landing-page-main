@@ -244,7 +244,7 @@ body {
   font-size: 1.8rem;
 }
 .split {
-  margin-top: 9rem;
+  margin: 9rem 0 5rem 0;
   background-image: url(images/bg-pattern-circles.svg),
     linear-gradient(to right, rgb(44, 45, 63), hsl(237, 23%, 32%));
   background-repeat: no-repeat;
@@ -255,13 +255,23 @@ body {
   border-bottom-left-radius: 100px;
   display: flex;
   flex-direction: row;
+  color: #fff;
 }
-.split-flex-left{
-  width: 40%;
+.split-flex-left {
+  width: 54%;
 }
-.split-flex-right{
-  width: 60%;
+.split-flex-right {
+  width: 46%;
 }
-.phones{
+.phones {
   margin: -4.5rem 0 0 4rem;
+}
+.split-heading{
+  padding-top: 4rem;
+  font-size: 2.3rem;
+}
+.split-text{
+  width: 80%;
+  line-height: 1.8rem;
+  color: #c8c8cb;
 }
