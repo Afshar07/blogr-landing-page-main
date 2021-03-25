@@ -21,8 +21,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #f1f1f1;
 }
-
 /* Header Section */
 .header {
   width: 100%;
@@ -52,6 +52,7 @@ body {
 }
 .navbar-logo {
   margin: 3rem 0rem 0 6rem;
+  cursor: pointer;
 }
 .left {
   display: flex;
@@ -128,7 +129,7 @@ body {
   cursor: pointer;
 }
 .sign-up:hover{
-  background-color: rgba(255, 255, 255, 0.384);
+  background-color: #ff7a85;
   color: #fff;
   transition: all .2s;
 }
@@ -174,7 +175,7 @@ body {
   outline: none;
 }
 .start-btn:hover{
-  background-color: rgba(255, 255, 255, 0.384);
+  background-color: #ff7a85;
   color: #fff;
   transition: all .2s;
   border: none;
@@ -199,4 +200,34 @@ body {
   background-color: #fff;
   color: #ff525d;
   transition: all .2s;
+}
+/* End of Header Section */
+
+/* Main Section */
+.main{
+  font-family: 'Overpass', sans-serif;
+}
+.first-section{
+  height: 50rem;
+  background-image: url(images/illustration-editor-desktop.svg);
+  background-position-x: 47.5rem;
+  background-position-y: 2rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.first-section_title{
+  text-align: center;
+  color: #1f3f5b;
+  font-size: 2.5rem;
+  padding-top: 5rem;
+}
+.flex-container{
+  display: flex;
+  flex-direction: row; 
+}
+.flex-left{
+  width: 50%;
+}
+.flex-right{
+  width: 50%;
 }
