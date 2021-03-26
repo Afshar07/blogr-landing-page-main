@@ -298,7 +298,28 @@ body {
   width: 83%;
 }
 .footer{
+  font-family: 'Overpass', sans-serif;
   height: 20rem;
   background-color: #25252d;
   border-top-right-radius: 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.footer-logo{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.footer-product{
+  color: #fff;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.footer-product ul{
+  list-style-type: none;
+  list-style-position: inside;
 }
