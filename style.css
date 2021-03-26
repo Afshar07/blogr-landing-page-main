@@ -269,16 +269,16 @@ body {
 .phones {
   margin: -4.5rem 0 0 4rem;
 }
-.split-heading{
+.split-heading {
   padding-top: 4rem;
   font-size: 2.3rem;
 }
-.split-text{
-  width:70%;
+.split-text {
+  width: 70%;
   line-height: 1.8rem;
   color: #c8c8cb;
 }
-.second-section{
+.second-section {
   height: 100vh;
   width: 100%;
   padding-top: 15rem;
@@ -287,39 +287,77 @@ body {
   background-repeat: no-repeat;
   background-position: -75% 60%;
 }
-.second-flex-right{
+.second-flex-right {
   width: 55%;
 }
 
-.second-flex-left{
+.second-flex-left {
   width: 45%;
 }
 .second-flex-left p {
   width: 83%;
 }
-.footer{
-  font-family: 'Overpass', sans-serif;
+.footer {
+  font-family: "Overpass", sans-serif;
   height: 20rem;
   background-color: #25252d;
   border-top-right-radius: 150px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 10rem;
 }
-.footer-logo{
+.footer-logo {
   grid-column-start: 2;
   grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
-.footer-product{
+.footer-product {
+  color: #fff;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.footer-product a {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1rem;
+  color: #c8c8cb;
+  font-size: .9rem;
+}
+.footer-company {
   color: #fff;
   grid-column-start: 4;
   grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
-.footer-product ul{
-  list-style-type: none;
-  list-style-position: inside;
+.footer-company a {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1rem;
+  color: #c8c8cb;
+  font-size: .9rem;
+}
+.footer-connect {
+  color: #fff;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.footer-connect a {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1rem;
+  color: #c8c8cb;
+  font-size: .9rem;
+}
+.footer-company h4,
+.footer-product h4,
+.footer-connect  h4 {
+  margin-bottom: 2rem;
+  font-family: "Ubuntu", sans-serif;
 }
