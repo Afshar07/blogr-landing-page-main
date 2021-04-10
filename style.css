@@ -28,14 +28,21 @@ body {
   .header {
     width: 100%;
     height: 25rem;
-    background-image: url(images/bg-pattern-intro.svg),
-      linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-    background-size: auto;
-    background-position: 25% center;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(
+      to right,
+      hsl(13, 100%, 72%),
+      hsl(353, 100%, 62%)
+    );
     border-bottom-left-radius: 150px;
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
+  }
+  .back-image {
+    height: 100%;
+    background-image: url(images/bg-pattern-intro.svg);
+    background-size: auto;
+    background-position: 25% center;
+    background-repeat: no-repeat;
   }
   .nav {
     width: 100%;
@@ -371,25 +378,37 @@ body {
 
 /* Mobile Design Start */
 @media only screen and (max-width: 767px) {
-  html{
+  html {
     width: 100%;
     margin: 0;
     padding: 0;
   }
-  body{
+  body {
     width: 100%;
     margin: 0;
     padding: 0;
+    background-color: #fff;
   }
   .header {
     width: 100vw;
-    height: 40rem;
-    background-image: url(images/bg-pattern-intro.svg),
-      linear-gradient(to top, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
-    background-size: auto;
-    background-position: 43% 43%;
-    background-repeat: no-repeat;
+    height: 38rem;
+    background-image: linear-gradient(
+      to top,
+      hsl(353, 100%, 62%),
+      hsl(13, 100%, 72%)
+    );
     font-family: "Ubuntu", sans-serif;
+    border-bottom-left-radius: 150px;
+  }
+  .back-image {
+    background-image: url(images/bg-pattern-intro.svg);
+    background-size: 100rem;
+    background-position: 37% 38%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius: 150px;
+
   }
   .nav {
     display: flex;
@@ -409,7 +428,7 @@ body {
   }
   /* Hamburger Menu Items End */
 
-  .titles{
+  .titles {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -418,14 +437,49 @@ body {
     text-align: center;
     margin: 3rem 1.5rem 0 1.5rem;
   }
-  .first-title{
+  .first-title {
     font-size: 2.3rem;
     font-weight: 600;
     margin-bottom: 0;
   }
-  .sub-title{
+  .sub-title {
     font-size: 1.4rem;
   }
 
+  .btns {
+    display: flex;
+    justify-content: center;
+    font-family: "Ubunto", sans-serif;
+    margin-top: 2rem;
+  }
+  .start-btn {
+    width: 8rem;
+    height: 2.5rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 100px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #ff525d;
+    cursor: pointer;
+  }
+  .learn-btn {
+    color: #fff;
+    margin-left: 1rem;
+    background-color: transparent;
+    height: 2.5rem;
+    width: 8rem;
+    border: 2px solid white;
+    border-radius: 100px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .learn-btn:focus,
+  .start-btn:focus {
+    outline: none;
+  }
 }
 /* Mobile Design End */
