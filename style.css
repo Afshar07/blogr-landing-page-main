@@ -481,5 +481,24 @@ body {
   .start-btn:focus {
     outline: none;
   }
+  .main{
+    font-family: "Overpass", sans-serif;
+  }
+  .first-section{
+    background-image: url(images/illustration-editor-mobile.svg);
+    background-position-y: 4rem;
+    background-repeat: no-repeat;
+  }
+  .first-section_title{
+    text-align: center;
+    color: #1f3f5b;
+    margin: 5rem 0 25rem 0;
+  }
+  .heading{
+    margin: 0 2rem 0 2rem;
+    color: #1f3f5b;
+    text-align: center;
+    font-size: 2rem;
+  }
 }
 /* Mobile Design End */
