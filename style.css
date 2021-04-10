@@ -516,12 +516,12 @@ body {
     top: -10rem;
   }
   .split{
-    height: 40rem;
+    height: 42rem;
     position: relative;
     background-image: url(images/bg-pattern-circles.svg),
       linear-gradient(to right, rgb(44, 45, 63), hsl(237, 23%, 32%));
       background-size: 45rem;
-      background-position: center 350%;
+      background-position: center 560%;
       background-repeat: no-repeat;
       border-top-right-radius: 150px;
       border-bottom-left-radius: 150px;
