@@ -516,18 +516,32 @@ body {
     top: -10rem;
   }
   .split{
-    height: 35rem;
+    height: 40rem;
     position: relative;
     background-image: url(images/bg-pattern-circles.svg),
       linear-gradient(to right, rgb(44, 45, 63), hsl(237, 23%, 32%));
       background-size: 45rem;
-      background-position: center 180%;
+      background-position: center 350%;
       background-repeat: no-repeat;
       border-top-right-radius: 150px;
+      border-bottom-left-radius: 150px;
   }
   .split-flex-right{
     position: absolute;
     top: 15rem;
+  }
+  .split-heading{
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: .9rem;
+  }
+  .split-text{
+    text-align: center;
+    color: #c8c8cb;
+    margin: 0 1.7rem 0 1.7rem;
+    line-height: 1.8rem;
+    font-size: 1.1rem;
   }
 }
 /* Mobile Design End */
