@@ -409,7 +409,6 @@ body {
     height: 100%;
     width: 100%;
     border-bottom-left-radius: 150px;
-
   }
   .nav {
     display: flex;
@@ -482,66 +481,82 @@ body {
   .start-btn:focus {
     outline: none;
   }
-  .main{
+  .main {
     font-family: "Overpass", sans-serif;
   }
-  .first-section{
+  .first-section {
     background-image: url(images/illustration-editor-mobile.svg);
     background-position-y: 4rem;
     background-repeat: no-repeat;
   }
-  .first-section_title{
+  .first-section_title {
     text-align: center;
     color: #1f3f5b;
     margin: 5rem 0 25rem 0;
   }
-  .heading{
+  .heading {
     margin: 0 2rem 0 2rem;
     color: #1f3f5b;
     text-align: center;
     font-size: 2rem;
   }
-  .detail-text{
+  .detail-text {
     text-align: center;
     margin: 1rem 1.8rem 0 1.8rem;
     line-height: 1.8rem;
     color: #1f3f5b;
   }
-  .detail-text:last-child{
+  .detail-text:last-child {
     margin-bottom: 15rem;
   }
-  .phones{
+  .phones {
     width: 100%;
     position: absolute;
     top: -10rem;
   }
-  .split{
+  .split {
     height: 42rem;
     position: relative;
     background-image: url(images/bg-pattern-circles.svg),
       linear-gradient(to right, rgb(44, 45, 63), hsl(237, 23%, 32%));
-      background-size: 45rem;
-      background-position: center 560%;
-      background-repeat: no-repeat;
-      border-top-right-radius: 150px;
-      border-bottom-left-radius: 150px;
+    background-size: 45rem;
+    background-position: center 560%;
+    background-repeat: no-repeat;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 150px;
   }
-  .split-flex-right{
+  .split-flex-right {
     position: absolute;
     top: 15rem;
   }
-  .split-heading{
+  .split-heading {
     text-align: center;
     color: #fff;
     font-size: 3rem;
-    margin-bottom: .9rem;
+    margin-bottom: 0.9rem;
   }
-  .split-text{
+  .split-text {
     text-align: center;
     color: #c8c8cb;
     margin: 0 1.7rem 0 1.7rem;
     line-height: 1.8rem;
     font-size: 1.1rem;
+  }
+  .second-section {
+    background-image: url(images/illustration-laptop-mobile.svg);
+    background-position: center 10%;
+    background-repeat: no-repeat;
+    padding-top: 10rem;
+    margin-bottom: 0;
+  }
+  .second-flex-left {
+    margin-top: 17rem;
+  }
+  .heading {
+    margin-top: 2rem;
+  }
+  .second-flex-left .detail-text:last-child {
+    margin-bottom: 5rem;
   }
 }
 /* Mobile Design End */
