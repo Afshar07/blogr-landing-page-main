@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 html {
-  width: 100%;
+  width: 100% !important;
   height: 100%;
 }
 body {
@@ -44,6 +44,7 @@ body {
     background-size: auto;
     background-position: 25% center;
     background-repeat: no-repeat;
+    border-bottom-left-radius: 150px;
   }
 
   .nav {
@@ -88,32 +89,37 @@ body {
   }
   .sub-item {
     margin-top: 0.7rem;
-    list-style-type: none;
     position: absolute;
-    color: #000000;
     background-color: #fff;
     display: none;
+    flex-direction: column;
     text-align: center;
-    right: 0;
     border-radius: 10px;
     padding: 1rem;
     right: auto;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
   }
-  .sub-item li {
-    margin-bottom: 1.5rem;
+  .sub-item a{
+    color: #000000;
+    width: 6rem;
+    text-decoration: none;
     font-size: 1rem;
     font-weight: 300;
-    width: 6rem;
+    flex-direction: column;
+      margin-bottom: 1.5rem !important;
+
   }
-  .sub-item li:last-child {
-    margin-bottom: 0;
+  .sub-item a:last-child {
+    margin-bottom: 0 !important;
   }
-  .sub-item li:hover {
+  .sub-item a:hover {
     font-weight: bold;
   }
+  .navbar-item p{
+    display: inline;
+  }
   .navbar-item:hover .sub-item {
-    display: block;
+    display: flex;
   }
   .right {
     margin: 2rem 6rem 0 0rem;
@@ -380,10 +386,11 @@ body {
 
 /* Mobile Design Start */
 @media only screen and (max-width: 767px) {
-  html {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  :root{
+    --arrow-down: transform: translateY(-1);
+  }
+  html{
+    width: 100% !important;
   }
   body {
     width: 100%;
@@ -412,7 +419,6 @@ body {
     border-bottom-left-radius: 150px;
   }
   .nav {
-    display: flex;
     justify-content: space-between;
     align-items: center;
   }
@@ -425,25 +431,26 @@ body {
 
 
   .navbar {
-    background-color: #fff;
+    background-color: #eeeeee;
     width: 90%;
-    height: 30rem;
+    /* height: 45rem; */
+    height: auto;
+    padding-bottom: 2rem;
     position: absolute;
     border-radius: 10px;
-    list-style-type: none;
-    padding-left: 0;
     left: 5%;
     text-align: center;
+    /* display: none; */
   }
   .navbar-item{
     color: #000000;
     font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .navbar-item:first-child{
-    margin-top: 2rem;
-  }
-  .navbar-item::after{
+
+  .nav-heading::after{
     vertical-align: middle;
     font-family: "Font Awesome 5 Free";
     font-weight: 600;
@@ -454,10 +461,26 @@ body {
   }
 
   .sub-item {
+    display: none;
+    flex-direction: column;
     list-style-type: none;
     text-align: center;
-    display: none;
+    width: 90%;
+    background-color: #c8c8cb;
+    font-size: 1rem;
+    position: relative;
+    border-radius: 7px;
   }
+  .show{
+    display: flex;
+  }
+  .sub-item a{
+    margin-bottom: 1rem;
+    padding: .5rem;
+    text-decoration: none;
+    color: #1f3f5b;
+  }
+
   /* .navbar, */
   .sign-up,
   .login {
@@ -523,7 +546,7 @@ body {
   }
   .first-section {
     background-image: url(images/illustration-editor-mobile.svg);
-    background-position-y: 4rem;
+    background-position: center 4rem;
     background-repeat: no-repeat;
   }
   .first-section_title {
@@ -547,25 +570,36 @@ body {
     margin-bottom: 15rem;
   }
   .phones {
+    margin-top: -47%;
     width: 100%;
-    position: absolute;
-    top: -10rem;
+
   }
   .split {
-    height: 42rem;
+    height: 100%;
+    width: 100%;
     position: relative;
     background-image: url(images/bg-pattern-circles.svg),
       linear-gradient(to right, rgb(44, 45, 63), hsl(237, 23%, 32%));
-    background-size: 45rem;
-    background-position: center 560%;
+    background-size: 70rem;
+    background-position: center 160%;
     background-repeat: no-repeat;
     border-top-right-radius: 150px;
     border-bottom-left-radius: 150px;
   }
   .split-flex-right {
-    position: absolute;
-    top: 15rem;
+    /* position: absolute; */
+    /* top: 19rem; */
+    padding-bottom: 10rem;
   }
+  /* .split-flex-left{
+    background-image: url(images/illustration-phones.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100rem;
+    padding-top: 100rem;
+    background-position: center -5rem;
+  } */
   .split-heading {
     text-align: center;
     color: #fff;
@@ -598,7 +632,7 @@ body {
   .footer {
     font-family: "Overpass", sans-serif;
     height: auto;
-    width: 100%;
+    width: 100% !important;
     background-color: #25252d;
     border-top-right-radius: 150px;
     display: flex;
