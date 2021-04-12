@@ -69,7 +69,7 @@ body {
     display: flex;
   }
   .navbar-item {
-    margin: 3.5rem 0rem 0 3rem;
+    margin: 3.5rem 0 0 3rem;
     position: relative;
     cursor: pointer;
   }
@@ -99,15 +99,14 @@ body {
     right: auto;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
   }
-  .sub-item a{
+  .sub-item a {
     color: #000000;
     width: 6rem;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 300;
     flex-direction: column;
-      margin-bottom: 1.5rem !important;
-
+    margin-bottom: 1.5rem !important;
   }
   .sub-item a:last-child {
     margin-bottom: 0 !important;
@@ -115,7 +114,7 @@ body {
   .sub-item a:hover {
     font-weight: bold;
   }
-  .navbar-item p{
+  .navbar-item p {
     display: inline;
   }
   .navbar-item:hover .sub-item {
@@ -381,15 +380,16 @@ body {
     margin-bottom: 2rem;
     font-family: "Ubuntu", sans-serif;
   }
+  .navsplit,
+  .mobile-btn {
+    display: none;
+  }
 }
 /* Desktop Design End */
 
 /* Mobile Design Start */
 @media only screen and (max-width: 767px) {
-  :root{
-    --arrow-down: transform: translateY(-1);
-  }
-  html{
+  html {
     width: 100% !important;
   }
   body {
@@ -419,6 +419,7 @@ body {
     border-bottom-left-radius: 150px;
   }
   .nav {
+    display: flex;
     justify-content: space-between;
     align-items: center;
   }
@@ -429,20 +430,17 @@ body {
 
   /* Hamburger Menu Items Start */
 
-
   .navbar {
-    background-color: #eeeeee;
+    background-color: #fff;
     width: 90%;
-    /* height: 45rem; */
     height: auto;
-    padding-bottom: 2rem;
     position: absolute;
     border-radius: 10px;
     left: 5%;
     text-align: center;
-    /* display: none; */
+    display: none;
   }
-  .navbar-item{
+  .navbar-item {
     color: #000000;
     font-size: 1.2rem;
     display: flex;
@@ -450,14 +448,23 @@ body {
     align-items: center;
   }
 
-  .nav-heading::after{
+  .nav-heading::after {
     vertical-align: middle;
     font-family: "Font Awesome 5 Free";
     font-weight: 600;
     font-size: 0.9rem;
     content: "\f107";
     color: #ff525d;
-    margin-left: .3rem;
+    margin-left: 0.3rem;
+  }
+  .active::after {
+    vertical-align: middle;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 0.9rem;
+    content: "\f106";
+    color: #ff525d;
+    margin-left: 0.3rem;
   }
 
   .sub-item {
@@ -466,25 +473,67 @@ body {
     list-style-type: none;
     text-align: center;
     width: 90%;
-    background-color: #c8c8cb;
+    background-color: #f1f1f1;
     font-size: 1rem;
     position: relative;
     border-radius: 7px;
   }
-  .show{
+  .burger {
+    display: block;
+  }
+  .show {
     display: flex;
   }
-  .sub-item a{
+  .sub-item a {
     margin-bottom: 1rem;
-    padding: .5rem;
+    padding: 0.5rem;
     text-decoration: none;
     color: #1f3f5b;
+  }
+  .sub-item:last-child{
+    margin-bottom: 2rem;
+  }
+  .navsplit {
+    width: 85%;
+    border-color: rgba(0, 0, 0, 0.05);
   }
 
   /* .navbar, */
   .sign-up,
   .login {
     display: none;
+  }
+  .mobile-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Overpass", sans-serif;
+    font-weight: 600;
+  }
+  .mobile-login {
+    margin-top: 1rem;
+    height: 2.5rem;
+    cursor: pointer;
+    text-align: center;
+    color: #1f3f5b;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .mobile-sign-up{
+    text-decoration: none;
+    background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    color: #fff;
+    width: 8.5rem;
+    height: 2.7rem;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
   }
   /* Hamburger Menu Items End */
 
@@ -572,7 +621,6 @@ body {
   .phones {
     margin-top: -47%;
     width: 100%;
-
   }
   .split {
     height: 100%;
@@ -662,5 +710,4 @@ body {
   .footer a:last-child {
     margin-bottom: 3rem;
   }
-}
 /* Mobile Design End */
