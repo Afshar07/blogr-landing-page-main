@@ -534,7 +534,6 @@ body {
     text-align: center;
     margin-bottom: 2rem;
   }
-  }
   /* Hamburger Menu Items End */
 
   .titles {
@@ -710,4 +709,6 @@ body {
   .footer a:last-child {
     margin-bottom: 3rem;
   }
+  
+}
 /* Mobile Design End */
